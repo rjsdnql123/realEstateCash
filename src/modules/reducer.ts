@@ -1,13 +1,13 @@
-import { CLICK_MAP, LOCATION_NUMBER } from "./action";
+import { CLICK_MAP, RESULT_LIST } from "./action";
 
 type RealestateState = {
   clickMap: string;
-  locationNumber: string;
+  resultList: any;
 };
 
 const initialState: RealestateState = {
-  clickMap: "asdf",
-  locationNumber: "fff",
+  clickMap: "",
+  resultList: [],
 };
 
 function Reducer(state: RealestateState = initialState, action: any) {
@@ -16,9 +16,9 @@ function Reducer(state: RealestateState = initialState, action: any) {
       return Object.assign({}, state, {
         clickMap: action.clickMap,
       });
-    case LOCATION_NUMBER:
+    case RESULT_LIST:
       return Object.assign({}, state, {
-        locationNumber: action.locationNumber,
+        resultList: action.resultList,
       });
     default:
       return state;
