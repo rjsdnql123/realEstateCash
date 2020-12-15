@@ -1,16 +1,12 @@
 import { CLICK_MAP, RESULT_LIST } from "./action";
+import { ReducerType, ActionType } from "./type";
 
-type RealestateState = {
-  clickMap: string;
-  resultList: any;
-};
-
-const initialState: RealestateState = {
+const initialState: ReducerType = {
   clickMap: "부동산 실 거래 real estate",
   resultList: [],
 };
 
-function Reducer(state: RealestateState = initialState, action: any) {
+function Reducer(state: ReducerType = initialState, action: ActionType) {
   switch (action.type) {
     case CLICK_MAP:
       return Object.assign({}, state, {

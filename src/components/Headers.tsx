@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import imgA from "../../src/imgA.png";
-function ListBox(props: any) {
-  console.log(props);
+import { HeaderProps } from "../modules/type";
+
+function Headers({ clickMap }: HeaderProps) {
+  console.log();
   return (
     <DDD>
       <ASD src={imgA}></ASD>
       {/* <SSS>{}</SSS> */}
-      {props.clickMap}
+      {clickMap}
     </DDD>
   );
 }
@@ -27,4 +29,4 @@ const DDD = styled.div`
   font-weight: bold;
 `;
 
-export default ListBox;
+export default Headers;

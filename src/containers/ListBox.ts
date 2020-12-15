@@ -1,9 +1,11 @@
 import { connect } from "react-redux";
 import ListBox from "../components/ListBox";
+import { mapStateToPropsType } from "../modules/type";
 
-const mapStateToProps = (state: any) => {
+const mapStateToProps = ({ Reducer: { resultList } }: mapStateToPropsType) => {
+  console.log(resultList);
   return {
-    resultList: state.Reducer.resultList,
+    resultList: resultList,
   };
 };
 

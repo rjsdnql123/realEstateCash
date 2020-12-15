@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import axios from "axios";
+import { MapPhotoProps } from "../modules/type";
 
 const ASD = styled.svg`
   &:hover {
@@ -18,7 +19,7 @@ const GGGGG = styled.tspan`
   font-size: 10px;
   pointer-events: none;
 `;
-function MapPhoto(props: any) {
+function MapPhoto({ clickMap, setClickMap, setResultList }: MapPhotoProps) {
   const handleChange = async (e: any) => {
     await axios
       .get("http://localhost:5000/realstate/pick", {
@@ -29,9 +30,9 @@ function MapPhoto(props: any) {
       })
       .then(({ data }) => {
         console.log(data);
-        props.setResultList(data);
+        setResultList(data);
       });
-    props.setClickMap(e.nativeEvent.path[0].id);
+    setClickMap(e.nativeEvent.path[0].id);
   };
   return (
     <ASD

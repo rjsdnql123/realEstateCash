@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { ListBoxProps, ResultListType } from "../modules/type";
 
-function ListBox(props: any) {
-  console.log(props);
+function ListBox({ resultList }: ListBoxProps) {
   return (
     <ASD>
-      {props.resultList.map((x: any, index: number) => {
-        return <div>{x.아파트 + x.법정동}</div>;
+      {resultList.map((x: ResultListType, index: number) => {
+        return <div key={index}>{x.아파트 + x.법정동}</div>;
       })}
     </ASD>
   );
