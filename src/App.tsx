@@ -1,31 +1,26 @@
 import React from "react";
-import axios from "axios";
-import Logo from "./containers/Logo";
-import Juso from "./Juso";
+import MapPhoto from "./containers/MapPhoto";
+import ListBox from "./containers/ListBox";
+import Headers from "./containers/Headers";
 import styled from "styled-components";
 
 function App() {
-  Juso();
-  axios
-    .get(
-      "/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev?ServiceKey=87YrGK0UyFcOLZaxfCt%2BHGjiD%2F8YEe%2FqteSCkhcWh%2F3OXV4XpJtZUwFsnseKBSRc5etkQw6JtzeN86qGQQfFVQ%3D%3D&LAWD_CD=11740&DEAL_YMD=201512"
-    )
-    .then((Response) => {
-      console.log(Response);
-    })
-    .catch((Error) => {
-      console.log(Error);
-    });
-
   return (
-    <ASD>
-      <Logo></Logo>
-      {/* <Icon></Icon> */}
-    </ASD>
+    <ADS>
+      <Headers></Headers>
+      <TopComponent>
+        <MapPhoto></MapPhoto>
+        <ListBox></ListBox>
+      </TopComponent>
+    </ADS>
   );
 }
 
-const ASD = styled.div`
-  position: relative;
+const TopComponent = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+const ADS = styled.div`
+  justify-content: center;
 `;
 export default App;
