@@ -6,7 +6,7 @@ type RealestateState = {
 };
 
 const initialState: RealestateState = {
-  clickMap: "",
+  clickMap: "부동산 실 거래 real estate",
   resultList: [],
 };
 
