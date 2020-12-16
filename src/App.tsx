@@ -6,21 +6,21 @@ import styled from "styled-components";
 
 function App() {
   return (
-    <ADS>
+    <Rootcomponent>
       <Headers></Headers>
       <TopComponent>
         <MapPhoto></MapPhoto>
         <ListBox></ListBox>
       </TopComponent>
-    </ADS>
+    </Rootcomponent>
   );
 }
 
 const TopComponent = styled.div`
   display: flex;
-  justify-content: center;
 `;
-const ADS = styled.div`
-  justify-content: center;
+const Rootcomponent = styled.div`
+  margin-left: 300px;
+  margin-right: 300px;
 `;
 export default App;
