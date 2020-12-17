@@ -11,6 +11,7 @@ export const setClickMap = (diff: string) => {
 };
 
 export const setResultList = (diff: ResultListType[]) => {
+  console.log(diff, "diff");
   return {
     type: RESULT_LIST,
     resultList: diff,
