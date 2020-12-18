@@ -20,7 +20,7 @@ const TopComponent = styled.div`
   display: flex;
 `;
 const Rootcomponent = styled.div`
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 250px;
+  margin-right: 250px;
 `;
 export default App;

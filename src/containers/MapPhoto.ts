@@ -5,7 +5,7 @@ import { setClickMap, setResultList } from "../modules/action";
 import { mapStateToPropsType, ResultListType } from "../modules/type";
 
 const mapStateToProps = ({ Reducer: { clickMap } }: mapStateToPropsType) => {
-  return { clickMap: clickMap };
+  return {};
 };
 
 const mapDispatchToProps = (dispatch: Function) => {

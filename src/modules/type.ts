@@ -45,7 +45,7 @@ export interface ListBoxProps {
 }
 
 export interface MapPhotoProps {
-  clickMap: string;
+  // clickMap: string;
   setClickMap: (diff: string) => void;
   setResultList: (diff: ResultListType[]) => void;
 }
