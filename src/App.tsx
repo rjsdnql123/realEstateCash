@@ -18,9 +18,15 @@ function App() {
 
 const TopComponent = styled.div`
   display: flex;
+  @media only screen and (max-width: 1224px) {
+    flex-direction: column;
+  }
 `;
 const Rootcomponent = styled.div`
   margin-left: 250px;
   margin-right: 250px;
+  @media only screen and (max-width: 768px) {
+    margin: 0px;
+  }
 `;
 export default App;
