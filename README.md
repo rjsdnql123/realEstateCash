@@ -26,4 +26,4 @@ redux를 활용하여 상태관리
 
 배포링크 : http://realapatment.tk/
 
-서버링크 : 
+서버링크 : https://github.com/rjsdnql123/realestateServer
