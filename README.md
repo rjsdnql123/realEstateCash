@@ -10,29 +10,6 @@
 npm install
 npm start
 ```
----
-
-### 
-
-styled-components와 media-query를 활용하여 모바일 환경 PC환경 반응형 제작
-
-지도 이미지는 위키백과에서 지도 SVG파일을 갖고 직접 지역명 수정
-
-AWS S3,SE2, EC2, route53을 활용해 배포 환경 구축
-
-components와 container 컴포넌트로 나눠 역활 분리
-
-typescript를 활용하여 정적타입 관리
-
-redux를 활용하여 상태관리
-
-배포링크 : http://realapatment.tk/
-
-서버링크 : https://github.com/rjsdnql123/realestateServer
-
-
-
-# reaclApartment 
 
 ---
 ## Index
@@ -83,5 +60,5 @@ redux를 활용하여 상태관리
 
 ---
 
-
+서버링크 : https://github.com/rjsdnql123/realestateServer
 
