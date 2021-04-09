@@ -61,5 +61,9 @@ c6d9c8.png)
 
 ---
 
+URL의 배포 기한이 
+
+~~배포링크 : http://realapatment.tk/~~
+
 서버링크 : https://github.com/rjsdnql123/realestateServer
 
