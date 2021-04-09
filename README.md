@@ -32,7 +32,8 @@ npm start
 
 ### Main Page
 
-![스크린샷, 2021-04-09 13-25-26](https://user-images.githubusercontent.com/61114705/114128698-e50cbb80-9937-11eb-8f81-1e4e48c6d9c8.png)
+![스크린샷, 2021-04-09 13-25-26](https://user-images.githubusercontent.com/61114705/114129097-d8d52e00-9938-11eb-949e-fcfaf75e01d4.png)
+c6d9c8.png)
 
 지도 SVG를 활용해 클릭시 지역의 주택 판매 정보를 바로 알아볼 수 있습니다.
 
